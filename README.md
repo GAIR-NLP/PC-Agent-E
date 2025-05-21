@@ -45,7 +45,7 @@ Table: Results of successful rate (%) for different models on WindowsAgentArena-
 
 ## Quick Start
 
-### Trajectory Boost
+### Trajectory Collection
 
 Collect raw human trajectory with PC Tracker. See usage [here](https://github.com/GAIR-NLP/PC-Agent?tab=readme-ov-file#pc-tracker).
 
