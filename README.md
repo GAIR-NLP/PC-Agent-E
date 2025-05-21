@@ -14,7 +14,7 @@
 
 Check out our demo of PC Agent-E autonomously controlling a computer to complete tasks on Windows and Linux systems!
 
-https://github.com/user-attachments/assets/db24647b-620e-421f-8088-db858bb55ab8
+https://github.com/user-attachments/assets/9540d8cb-630d-41e2-a108-a96ca3fcb32e
 
 https://github.com/user-attachments/assets/18b436e7-733f-49a5-8716-25c29a990766
 
