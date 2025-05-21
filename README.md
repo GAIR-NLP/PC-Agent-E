@@ -14,9 +14,9 @@
 
 Check out our demo of PC Agent-E autonomously controlling a computer to complete tasks on Windows and Linux systems!
 
-https://github.com/user-attachments/assets/9b5ccebb-4c18-497c-95e9-6879941a0352
+https://github.com/user-attachments/assets/db24647b-620e-421f-8088-db858bb55ab8
 
-https://github.com/user-attachments/assets/42e5717b-4121-4ceb-a920-b333b6577902
+https://github.com/user-attachments/assets/18b436e7-733f-49a5-8716-25c29a990766
 
 ## Introduction
 
@@ -37,7 +37,7 @@ Collect raw human trajectory with PC Tracker. See usage [here](https://github.co
 
 ### Post Processing
 
-To convert raw human trajectory into high-quality trajectories for agent training, follow these steps:
+To convert raw human trajectory into high-quality trajectories for training, follow these steps:
 1. Place recorded in the `data/` directory. 
 2. Run post processing pipeline:
 ```bash
