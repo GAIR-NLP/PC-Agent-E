@@ -29,6 +29,20 @@ This framework is implemented with four key components:
 
 ![overview](./assets/overview.png)
 
+## Main Results
+
+Table: Results of successful rate (%) for different models on WindowsAgentArena-V2, an improved benchmark we also released.
+
+| Models                   | LibreOffice | Chrome | Edge  | System | VS Code | VLC  | Utils | Total |
+|--------------------------|-------------|--------|-------|--------|---------|------|--------|-------|
+| **Number of Tasks**      | 42          | 17     | 13    | 24     | 19      | 14   | 12     | 141   |
+| Qwen2.5-VL-72B           | 0.0         | 34.7   | 15.4  | 20.8   | 26.3    | 7.6  | 16.7   | 14.9  |
+| UI-TARS-1.5-7B           | **7.1**     | 34.7   | 23.1  | 45.8   | 21.1    | 7.6  | 16.7   | 21.3  |
+| UI-TARS-72B-DPO          | 0.0         | 40.6   | 38.5  | 58.3   | 36.8    | 7.6  | 25.0   | 26.2  |
+| Claude 3.7 Sonnet        | 2.4         | 46.5   | **61.5** | 54.2   | 52.6    | 29.0 | 16.7   | 32.6  |
+| Claude 3.7 Sonnet (thinking) | 2.4     | **64.1** | 46.2  | **66.7** | 52.6    | 21.9 | 25.0   | 35.4  |
+| **PC Agent-E (Ours)**    | 4.8         | **64.1** | 46.2  | 50.0   | **57.9**| **35.7** | **33.3** | **36.0** |
+
 ## Quick Start
 
 ### Trajectory Boost
