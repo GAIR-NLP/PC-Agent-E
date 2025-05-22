@@ -89,6 +89,11 @@ python deploy/main.py
 
 Reference scripts for model deployment can be found in `scripts/server.sh`.
 
+## Acknowledgments
+
+We would like to express our sincere gratitude to Shijie Xia for his meticulous review and constructive
+suggestions, which significantly improved the quality of this paper. This project is supported by SJTU SEIEE - ByteDance Large Language Model Joint Laboratory, SII.
+
 ## Citation
 
 If you find this work helpful, please consider citing:
