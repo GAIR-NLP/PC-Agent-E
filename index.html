@@ -127,15 +127,24 @@
                 </a>
             </span>
             <!-- Dataset Link. -->
-            <!-- <span class="link-block">
-              <a href="https://huggingface.co/GAIR/Anole-7b-v0.1" target="_blank"
+            <span class="link-block">
+              <a href="https://huggingface.co/henryhe0123/PC-Agent-E" target="_blank"
+                  class="external-link button is-normal is-rounded is-dark">
+                <span class="icon">
+                  <p style="font-size:18px">🤖</p>
+                </span>
+                <span>Model</span>
+              </a>
+            </span>
+            <span class="link-block">
+              <a href="https://huggingface.co/datasets/henryhe0123/PC-Agent-E" target="_blank"
                   class="external-link button is-normal is-rounded is-dark">
                 <span class="icon">
                   <p style="font-size:18px">🤗</p>
                 </span>
-                <span>Model</span>
+                <span>Dataset</span>
               </a>
-            </span> -->
+            </span>
           </div>
 
         </div>
@@ -171,7 +180,23 @@
   </div>  
 </section>
 
-<section class="section"></section>
+<section class="section">
+  <div class="container is-max-desktop">
+    <!-- Abstract. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>
+            Scaling up high-quality trajectory data has long been a critical bottleneck for developing human-like computer use agents. We introduce PC Agent-E, an efficient agent training framework that significantly reduces reliance on large-scale human demonstrations. Starting with just <b>312</b> human-annotated computer use trajectories, we further improved data quality by synthesizing diverse action decisions with Claude 3.7 Sonnet. Trained on these enriched trajectories, our PC Agent-E model achieved a remarkable <b>141%</b> relative improvement, surpassing the strong Claude 3.7 Sonnet with extended thinking on WindowsAgentArena-V2, an improved benchmark we also released. Furthermore, PC Agent-E demonstrates strong generalizability to different operating systems on OSWorld. Our findings suggest that strong computer use capabilities can be stimulated from a small amount of high-quality trajectory data.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
 
   <div class="container is-max-desktop">
     <div class="columns is-centered has-text-centered">
@@ -182,28 +207,19 @@
         <div align="center">
             <img src="static/images/overview.png" width=100%/>
         </div>
-
+        <div style="text-align: left;">
+        <p>
+          Figure: Overview of our framework, consisting of 4 key components: (1) Trajectory Collection,
+          gathering a small set of human trajectories by recording user actions and state observations at each step; (2)
+          Thought Completion, reconstructing the implicit thought process missing in raw human trajectories; and
+          (3) Trajectory Boost, diversifying action decisions to further enhance trajectory quality; (4) Agent Training,
+          developing a strong computer use agent with remarkable data efficiency.
+        </p>
         </div>
       </div>
     </div>
   </div>
 
-</section>
-
-<section class="section">
-  <div class="container is-max-desktop">
-    <!-- Abstract. -->
-    <div class="columns is-centered has-text-centered">
-      <div class="column is-four-fifths">
-        <h2 class="title is-3">Abstract</h2>
-        <div class="content has-text-justified">
-          <p>
-            Scaling up high-quality trajectory data has long been a critical bottleneck for developing human-like computer use agents. We introduce PC Agent-E, an efficient agent training framework that significantly reduces reliance on large-scale human demonstrations. Starting with just 312 human-annotated computer use trajectories, we further improved data quality by synthesizing diverse action decisions with Claude 3.7 Sonnet. Trained on these enriched trajectories, our PC Agent-E model achieved a remarkable 141% relative improvement, surpassing the strong Claude 3.7 Sonnet with extended thinking on WindowsAgentArena-V2, an improved benchmark we also released. Furthermore, PC Agent-E demonstrates strong generalizability to different operating systems on OSWorld. Our findings suggest that strong computer use capabilities can be stimulated from a small amount of high-quality trajectory data.
-          </p>
-        </div>
-      </div>
-    </div>
-  </div>
 </section>
 
 <section class="section">
@@ -212,36 +228,13 @@
     <div class="columns is-centered">
       <div class="column is-four-fifths">
         <div class="content has-text-centered">
-          <img src="static/images/first_image.png" width=50%/>
+          <img src="static/images/m_results.png" width=100%/>
+          <p>Table: Results of successful rate (%) for different models on WindowsAgentArena-V2.</p>
         </div>
       </div>
     </div>
   </div>
 </section>
-
-<!--section class="section">
-
-  <div class="container is-max-desktop">
-    <div class="columns is-centered has-text-centered">
-      <div class="column is-four-fifths">
-        <h2 id="leaderboard" class="title is-3">🔍 Methodology</h2>
-        <div class="content">
-
-        <div align="center">
-            <img src="static/images/anole_main.png" width=100%/>
-        </div>
-        <div style="text-align: left;">
-        <p>Based on available information and our testings, the latest release of Chameleon have demonstrated strong performance in text understanding, text generation, and multimodal understanding. Anole, build on top of Chameleon, aiming to facilitate the image generation and multimodal generation capabilities from Chameleon.</p>
-        <p>Chameleon's pre-training data natively includes both text and image modalities, theoretically equipping it with image generation capabilities. Our goal is to facilitate this ability without compromising its text understanding, generation, and multimodal comprehension. To achieve this, we froze most of Chameleon's parameters and fine-tuned only the logits corresponding to image token ids in transformer's output head layer.</p>
-        <p>Specifically, Anole-7b-v0.1 was developed using a small amount of image data (5,859 images, approximately 6 million image tokens) and was fine-tuned on just a few parameters (less than 40M) in a short time (around 30 minutes on 8 A100 GPUs). Despite this, Anole-7b-v0.1 expresses impressive image generation capabilities.</p>
-        </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-</section>
--->
 
 
 <section class="section">
@@ -250,7 +243,7 @@
     <div class="columns is-centered has-text-centered">
       <div class="column is-four-fifths">
         <h2 class="title is-3">📬 Contact</h2>
-        <div class="content has-text-justified">
+        <div class="content has-text-centered">
           <p>
             If you have any questions regarding this project, feel free to directly submit a <a href="https://github.com/GAIR-NLP/PC-Agent-E">github issue</a>.
           </p>
