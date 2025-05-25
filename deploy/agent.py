@@ -11,25 +11,28 @@ from prompt import *
 
 class PCAgentE:
     def __init__(
-        self, client, model, screenshot_size=(1280, 720), prompt=AGENT_PROMPT
+        self, client, model, max_steps=30, screenshot_size=(1280, 720), prompt=AGENT_PROMPT
     ):
         self.retry_click_elements = []
         self.history = []
         self.history_cut_off = 10
         self.client = client
         self.model = model
+        self.max_steps = max_steps
         self.screenshot_size = screenshot_size
         self.prompt = prompt
+        self.steps = 0
         print(f"Using model: {model}")
        
-    def predict(self, instruction: str, obs: Dict) -> List:
+    def predict(self, instruction: str, obs: Dict):
         """
         Predict the next action based on the current observation
         Args:
             instruction: the task description
             obs: the current observation (obs['screenshot'])
         Returns:
-            actions: the next action
+            actions: the code of next action
+            logs: the logs of next action
         """
         logs = {}
         self.task_description = instruction
@@ -55,8 +58,14 @@ class PCAgentE:
                 self.add_to_history(f"Plan: {plan}\n\nAction: {action}")
                 break
 
-        logs['plan_result'] = f"Plan: {plan}\n\nAction: {action}"
-        actions = [action_code]
+        # check if the steps is greater than the max steps
+        self.steps += 1
+        if self.steps >= self.max_steps and action_code != "DONE":
+            logs['plan_result'] = "Max steps reached"
+            actions = ["FAIL"]
+        else:
+            logs['plan_result'] = f"Plan: {plan}\n\nAction: {action}"
+            actions = [action_code]
 
         return actions, logs
 

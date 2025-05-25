@@ -36,10 +36,11 @@ class PCEnv:
         if action == "WAIT":
             time.sleep(3)
         elif action == "DONE":
+            print("Task completed, terminating execution")
             done = True
             return {"screenshot": self.get_screenshot()}, done
         elif action == "FAIL":
-            print("Task failed")
+            print("Task failed, terminating execution")
             done = True
             return {"screenshot": self.get_screenshot()}, done
         else:
