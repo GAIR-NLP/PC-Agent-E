@@ -32,7 +32,7 @@ This framework is implemented with four key components:
 
 ## Main Results
 
-Table: Results of successful rate (%) for different models on WindowsAgentArena-V2, an improved benchmark we also released.
+Table: Results of successful rate (%) for different models on [WindowsAgentArena-V2](https://github.com/GAIR-NLP/WindowsAgentArena-V2), an improved benchmark we also released.
 
 | Models                   | LibreOffice | Chrome | Edge  | System | VS Code | VLC  | Utils | Total |
 |--------------------------|-------------|--------|-------|--------|---------|------|--------|-------|
