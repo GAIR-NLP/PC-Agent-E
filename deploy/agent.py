@@ -110,9 +110,9 @@ class PCAgentE:
                 print(f"Failed to get the plan: {e}, try again.")
                 time.sleep(1)
                 if try_time == 1:
-                    raise f"Failed to get the plan: {e}"
-
-            try_time -= 1   
+                    raise Exception(f"Failed to get the plan: {e}")
+                
+            try_time -= 1
 
     def add_to_history(self, output):
         """
