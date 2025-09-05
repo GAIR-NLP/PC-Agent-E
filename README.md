@@ -5,7 +5,7 @@
   🌐 <a href="https://gair-nlp.github.io/PC-Agent-E" target="_blank">Website</a> &nbsp; | &nbsp;
   🤖 <a href="https://huggingface.co/henryhe0123/PC-Agent-E" target="_blank">Model</a> &nbsp; | &nbsp;
   🤗 <a href="https://huggingface.co/datasets/henryhe0123/PC-Agent-E" target="_blank">Dataset</a> &nbsp; | &nbsp;
-  📊 <a href="https://github.com/GAIR-NLP/WindowsAgentArena-V2" target="_blank">Benchmark</a>
+  ⚔️ <a href="https://github.com/GAIR-NLP/WindowsAgentArena-V2" target="_blank">WindowsAgentArena-V2</a>
 </p>
 
 <p align="center">
